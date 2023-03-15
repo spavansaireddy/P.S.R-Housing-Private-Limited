@@ -1,0 +1,115 @@
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+.Nav_left{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.Nav_left img{
+    width: 20px;
+}
+.Nav_center ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    font-size: 17px;
+}
+.Nav_center a:hover{
+    color: rgb(244, 87, 73);
+}
+.Nav a{
+    text-decoration: none;
+    color: black;
+}
+.Nav button{
+    border: none;
+    border-radius: 20px 20px;
+    width: 85px;
+    height: 40px;
+    background-color: rgb(9, 177, 244);
+    cursor: pointer;
+    font-size: 17px;
+}
+.Nav .responsive_nav ul{
+    display: none;
+    background-color: rgb(9, 177, 244);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.Nav .responsive_nav img{
+    width: 20px;
+}
+@media only screen and (min-width:1200px) {
+    .Nav{
+        margin-right: 95px;
+    }
+}
+@media only screen and (max-width:1025px) {
+    .Nav{
+        margin-right: 69px;
+    }
+}
+@media only screen and (max-width:820px){
+    .Nav{
+        margin-left: 22px;
+       }
+       .Nav_left{
+        font-size: 13px;
+    }  
+       .Nav button{
+        width: 55px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width:767px){
+    .Nav{
+        margin-right: 45px;
+       }
+    .Nav_center ul{
+        display: none;
+    }
+    .Nav_left h5{
+        font-size: 10px;
+    }
+    .Nav button{
+        width: 60px;
+        height: 25px;
+        font-size: 15px;
+    } 
+    .Nav .responsive_nav ul{
+       display: flex;
+       position: fixed;
+       gap: 2rem;
+       bottom: 20px;
+       list-style-type: none;
+       margin-left: 40px;
+    }
+}
+@media only screen and (max-width:425px){
+   .Nav{
+    margin-right: 40px;
+   }
+}
+@media only screen and (max-width:300px){
+    .Nav_left h5{
+        font-size: 7.5px;
+    }
+    .Nav button{
+        width: 60px;
+        height: 20px;
+        font-size: 15px;
+    } 
+    .Nav .responsive_nav ul{
+        display: flex;
+        position: fixed;
+        gap: 2rem;
+        bottom: 20px;
+        list-style-type: none;
+        margin-left: 5px;
+    }
+}

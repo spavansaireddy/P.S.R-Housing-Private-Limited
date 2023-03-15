@@ -1,0 +1,126 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about_header{
+    display: flex;
+    justify-content: center;
+}
+.about_left img{
+    width: 80%;
+    border-radius: 50px 50px 50px 0px;
+}
+.about_right h3{
+    color: rgb(74, 74, 230);
+}
+.about_right a{
+    color:blueviolet;
+    text-decoration: none;
+}
+.about_section{
+padding: 50px;
+
+}
+.about_section div{
+    background-color: rgb(10, 77, 74);
+    color: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow:5px 10px 8px rgb(10, 77, 74);
+}
+.about_section div:hover{
+    background-color: white;
+    color: black;
+    box-shadow:5px 10px 8px gainsboro;
+    cursor: pointer;
+}
+.about_section img{
+    width: 30px;
+}
+.about_section p{
+    text-align: justify;
+    font-size: 15px;
+}
+.about_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.about_article details{
+    background-color: bisque;
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow:5px 10px 8px bisque;
+    cursor: pointer;
+}
+@media only screen and (min-width:1200px){
+    .about_right{
+        font-size: 17px;
+    }
+    .about_left img{
+        position: relative;
+        top: 10vh;
+   }
+}
+@media only screen and (max-width:1025px){
+    .about_header{
+        display: flex;
+        justify-content: center;
+    }
+    .about_left img{
+         width: 70%;
+         margin-left: 50px;
+         position: relative;
+         top: 20vh;
+    }
+    .about_right{
+        font-size: 17px;
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width:767px){
+    .about_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_left img{
+        width: 60%;
+        margin-left: 55px;
+        position: relative;
+        top: -1vh;
+    }
+    .about_right{
+        font-size: 15px;
+        margin-left: 55px;
+    }
+}
+@media only screen and (max-width:425px){
+    .about_left img{
+        width: 60%;
+        margin-left: 55px;
+        position: relative;
+        top: -1vh;
+    }
+    .about_right{
+        font-size: 15px;
+        margin-left: 55px;
+    }
+}
+@media only screen and (max-width:300px){
+    .about_left img{
+        width: 60%;
+        margin-left: 55px;
+        position: relative;
+        top: -1vh;
+    }
+    .about_right{
+        font-size: 12px;
+        margin-left: 55px;
+    }
+}

@@ -1,0 +1,58 @@
+.Login_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 29%;
+    gap: 5%;
+}
+.Login_left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Login_left form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Login_left form input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(108, 106, 106);
+}
+.Login_left button{
+    background-color: rgb(245, 130, 35);
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.Login_left a{
+    text-decoration: none;
+    color: black;
+}
+.Login_right img{
+    width: 50%;
+    height: 90%;
+    border-radius: 10%;
+}
+@media screen and (max-width:767px){
+    .Login_header{
+        display: flex;
+        flex-direction: column;
+    }
+    .Login_left{
+        margin-right: 39%;
+    }
+    .Login_right img{
+        /* margin-right: 90%;
+        /* margin: 10%;
+
+        width: 90%;
+        height: 100%; */
+        display: none;
+    }
+}
